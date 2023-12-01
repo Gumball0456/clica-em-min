@@ -7,20 +7,15 @@
     <title>FizzBuzz</title>
 </head>
 <body>
-    <div class="text">Hello, want to play?</div>
+    <div class="flex-container">
+        <div class="text">
+            <p id="innerText">
+                Clica em gerar texto
+            </p>
+        </div>
+        <button>gerar texto</button>
+    </div>
+
 </body>
-<script>
-    let text = document.querySelector("div");
-    let actual = 0;
-    function changeText(){
-        if(actual == 0){
-            text.innerHTML = "Clica em mim";
-            actual = 1;
-        }else{
-            text.innerHTML = "Clicaste em mim!"
-            actual = 0;
-        }
-    }
-    text.addEventListener("click",changeText);
-</script>
+<script src="script.js"></script>
 </html>

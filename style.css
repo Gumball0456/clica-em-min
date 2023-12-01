@@ -3,19 +3,47 @@
 }
 html{
     height: 100%;
-    background-color: #F8DFD4;
+    background-color: #003049;
 }
+
 body{
     display: flex;
     justify-content: center;
     height: 100%;
 }
 
-.text:hover{
-    font-weight: bolder;
-    cursor: pointer;
-}
-.text{
+.flex-container{
+    flex-basis: 300px;
+    height: 70%;
+    display: flex;
+    gap: 30%;
+    flex-direction: column;
     align-self: center;
     color: #637E76;
+    background-color: #669BBC;
+    border-radius: 2%;
+    padding: 10px;
+}
+
+.text{
+    background-color: #FDF0D5;
+    height: 20%;
+    border-radius: 3%;
+    padding: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #580303;
+    width: 31%;
+    flex-basis: 11%;
+}
+button{
+    width: 30%;
+    margin: 0 auto;
+    border: 2px ;
+    border-radius: 10%;
+    background-color: #780000;
+    color: grey;
+    flex-basis: 10%;
 }
