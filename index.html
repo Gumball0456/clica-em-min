@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <div class="text">Hello, want to play?</div>
+</body>
+<script>
+    let text = document.querySelector("div");
+    let actual = 0;
+    function changeText(){
+        if(actual == 0){
+            text.innerHTML = "Clica em mim";
+            actual = 1;
+        }else{
+            text.innerHTML = "Clicaste em mim!"
+            actual = 0;
+        }
+    }
+    text.addEventListener("click",changeText);
+</script>
+</html>
